@@ -1,23 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-@layer components {
-  .container-custom {
-    @apply w-[90%] max-w-7xl mx-auto;
-  }
+body {
+  font-family: 'Inter', sans-serif;
 }
 
 @keyframes slideIn {
@@ -29,11 +21,11 @@
   animation: slideIn 0.5s ease-out forwards;
 }
 
-@keyframes slideIn {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100% { opacity: 1; transform: translateY(0); }
+@keyframes scrollHorizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-.animate-slide {
-  animation: slideIn 0.5s ease-out forwards;
+.animate-scroll-horizontal {
+  animation: scrollHorizontal 20s linear infinite;
 }

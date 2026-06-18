@@ -12,6 +12,10 @@ export default {
         'silver': '#C0C0C0',
       },
     },
+    container: {
+      center: true,
+      padding: '2rem',
+    },
   },
   plugins: [],
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
+
 // ========== ANIMATED TOP BANNER ==========
 function TopBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
